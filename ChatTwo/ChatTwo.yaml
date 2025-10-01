@@ -1,20 +1,19 @@
-name: Chat 2
-author: Infi, Anna
-punchline: Electric Boogaloo - ♪ A whole new chat, a new fantastic chat window ♪
+name: Chat 2 CN
+author: Infi, Anna, MeowZWR, ElliotZ
+punchline: 《电力布吉舞》——♪ 一个全新的聊天，一个美妙的新聊天窗口♪
 description: |-
-  Chat 2 is a complete rewrite of the in-game chat window as a plugin.
-  It supports:
-
-  - Unlimited tabs
-  - Tabs that always send to a certain channel
-  - More flexible filtering
-  - RGB channel colouring
-  - Completely variable font size
-  - Sidebar tabs
-  - Unread counts
-  - Emotes
-  - Screenshot mode (obfuscate names)
-repo_url: https://github.com/Infiziert90/ChatTwo
+  Chat 2是作为插件对游戏内聊天窗口的彻底重构版本。
+  它支持以下功能：
+  -无数量限制的聊天标签页
+  -始终发送至特定频道的标签页设置
+  -更灵活的聊天过滤机制
+  -支持RGB设置的频道色彩自定义
+  -完全自由调节的字体大小
+  -侧边栏标签页布局
+  -未读消息计数显示
+  -表情符号功能
+  -截图模式（支持匿名化处理玩家名称）
+repo_url: https://github.com/ElliotZ/ChatTwoCN
 accepts_feedback: true
 tags:
   - Social
@@ -22,33 +21,5 @@ tags:
   - Chat
   - Replacement
 changelog:  |-
-  **New Feature Added~**
-  - A web interface has been added
-  - *This will not function if your game client is offline or you are logged out of the game*
-
-  **Main Features**
-  - View in-game chat on any device that has a web browser functionality
-  - Can send chat messages through the web interface directly into the game itself
-  - Easily copy & paste messages
-  - Option for automatic starting the web interface feature
-  - Log lines render limit for faster loading performance [Default 1000]
-
-  **Security**
-  - This feature is not intended to be used outside of your local, private network
-  - Do not forward ports that are described inside the chat2 options panel
-  - Never share your authentication code under any circumstances
-  - Multi-box support is not provided, the web interface will track only the first client
-
-  **Additional Features soon to be Added**
-  - Display errors as small notifications inside the web interface
-
-  **Planned Features**
-  - Multiple Tabs support
-  - Browser specific settings
-  - Stylization support
-
-  **Additional Permissions Note**
-  - Users that wish to expand this to apps or other platforms are welcome to do so
-
-  *Note: An FAQ will be provided in the chat2 thread on the dalamud discord, linked in the About section*
+  修正国服客户端不兼容代码
 
