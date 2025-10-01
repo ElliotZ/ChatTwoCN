@@ -576,7 +576,7 @@ public sealed class PayloadHandler
                 world = Plugin.ClientState.LocalPlayer.HomeWorld;
 
         var name = new List<Chunk> { new TextChunk(ChunkSource.None, null, player.PlayerName) };
-        if (world.Value.IsPublic)
+        if (/*world.Value.IsPublic*/true)
         {
             name.AddRange([
                 new IconChunk(ChunkSource.None, null, BitmapFontIcon.CrossWorld),
@@ -594,8 +594,8 @@ public sealed class PayloadHandler
             if (!Sheets.IsInForay())
             {
                 LogWindow.Chat = $"/tell {player.PlayerName}";
-                if (world.Value.IsPublic)
-                    LogWindow.Chat += $"@{world.Value.Name}";
+                if (/*world.Value.IsPublic*/true)
+                    LogWindow.Chat += $"@{world.Value.Name.ToString()}";
 
                 LogWindow.Chat += " ";
             }
@@ -607,7 +607,7 @@ public sealed class PayloadHandler
             LogWindow.Activate = true;
         }
 
-        if (world.Value.IsPublic)
+        if (/*world.Value.IsPublic*/true)
         {
             var party = Plugin.PartyList;
             var leader = (ulong?) party[(int) party.PartyLeaderIndex]?.ContentId;
@@ -702,7 +702,7 @@ public sealed class PayloadHandler
             if (character.Name.TextValue != payload.PlayerName)
                 continue;
 
-            if (payload.World.Value.IsPublic && character.HomeWorld.RowId != payload.World.RowId)
+            if (/*payload.World.Value.IsPublic && */character.HomeWorld.RowId != payload.World.RowId)
                 continue;
 
             return character;

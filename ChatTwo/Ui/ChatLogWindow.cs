@@ -952,7 +952,7 @@ public sealed class ChatLogWindow : Window
 
                     var reason = target.Reason;
                     var world = Sheets.WorldSheet.GetRow(target.World);
-                    if (world is { IsPublic: true })
+                    if (/*world is { IsPublic: true }*/true)
                     {
                         if (reason == TellReason.Reply && GameFunctions.GameFunctions.GetFriends().Any(friend => friend.ContentId == target.ContentId))
                             reason = TellReason.Friend;
