@@ -83,7 +83,7 @@ internal class Configuration : IPluginConfiguration
     public HashSet<string> BlockedEmotes = [];
 
     public bool FontsEnabled = true;
-    public ExtraGlyphRanges ExtraGlyphRanges = 0;
+    public ExtraGlyphRanges ExtraGlyphRanges = (ExtraGlyphRanges)125;
     public float FontSizeV2 = 12.75f;
     public float SymbolsFontSizeV2 = 12.75f;
     public SingleFontSpec GlobalFontV2 = new()
